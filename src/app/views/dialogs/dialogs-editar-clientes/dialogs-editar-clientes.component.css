@@ -1,0 +1,12 @@
+.clientes-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.clientes-full-width {
+  width: 100%;
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 100;
+}

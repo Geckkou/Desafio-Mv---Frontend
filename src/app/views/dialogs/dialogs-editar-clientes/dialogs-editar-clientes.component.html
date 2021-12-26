@@ -1,0 +1,63 @@
+<h1 mat-dialog-title>Clientes</h1>
+
+<div mat-dialog-content>
+  <form class="clientes-form" [formGroup]="clientesForm">
+
+    <mat-form-field class="clientes-full-width">
+      <mat-label>Nome</mat-label>
+      <input matInput formControlName="nome" name="nome">
+    </mat-form-field>
+
+    <mat-form-field class="clientes-full-width">
+      <mat-label>Cnpj</mat-label>
+      <input matInput formControlName="cnpj" name="cnpj">
+    </mat-form-field>
+
+    <h1 mat-dialog-title>Endereço Completo</h1>
+    <mat-form-field class="clientes-full-width">
+      <mat-label>Rua</mat-label>
+      <input matInput formControlName="rua" name="rua">
+    </mat-form-field>
+
+    <mat-form-field class="clientes-full-width">
+      <mat-label>Bairro</mat-label>
+      <input matInput formControlName="bairro" name="bairro">
+    </mat-form-field>
+
+    <mat-form-field class="clientes-full-width">
+      <mat-label>Cidade</mat-label>
+      <input matInput formControlName="cidade" name="cidade">
+    </mat-form-field>
+
+    <mat-form-field class="clientes-full-width">
+      <mat-label>Estado</mat-label>
+      <input matInput formControlName="estado" name="estado">
+    </mat-form-field>
+
+    <mat-form-field class="clientes-full-width">
+      <mat-label>Complemento</mat-label>
+      <input matInput formControlName="complemento" name="complemento">
+    </mat-form-field>
+
+    <h1 mat-dialog-title>Projetos</h1>
+    <mat-form-field class="clientes-full-width">
+      <mat-label>Nome</mat-label>
+      <input matInput formControlName="nome" name="nome">
+    </mat-form-field>
+
+    <mat-form-field class="clientes-full-width">
+      <mat-label>Código</mat-label>
+      <input matInput formControlName="codigo" name="codigo">
+    </mat-form-field>
+
+    <mat-form-field class="clientes-full-width">
+      <mat-label>Valor</mat-label>
+      <input matInput type="number" formControlName="valor" name="valor">
+    </mat-form-field>
+  </form>
+</div>
+
+<div mat-dialog-actions>
+  <button mat-raised-button color="primary" (click)="editarClientes()">Enviar</button>
+  <button mat-button (click)="close()">Fechar</button>
+</div>
